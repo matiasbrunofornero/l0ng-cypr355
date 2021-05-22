@@ -1,0 +1,5 @@
+{
+    "addressInput": ".napkin-modal-bd37 .inputText-5e61:not(input[name=\"unitNumber\"]",
+    "unitInput": ".napkin-modal-bd37 input[name=\"unitNumber\"]",
+    "addressSuggestions": ".suggestions-bef5 [role=\"option\"]"
+}

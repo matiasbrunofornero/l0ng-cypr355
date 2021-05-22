@@ -1,0 +1,4 @@
+{
+    "forHomeownersButton": ".welcomeToBelong-b5ea .fold-4a3f a[label=\"For Homeowners\"]",
+    "forRentersButton": ".welcomeToBelong-b5ea .fold-4a3f a[label=\"For Renters\"]"
+}

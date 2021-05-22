@@ -1,0 +1,8 @@
+{
+    "nameInput": "input[name=\"firstName\"]",
+    "lastnameInput": "input[name=\"lastName\"]",
+    "emailInput": "input[name=\"email\"]",
+    "phoneInput": "input[name=\"phone\"]",
+    "unlockPriceButton": ".button-container-275a [type=\"submit\"]",
+    "signInButton": ".login-container-6be1 [type=\"button\"]"
+}

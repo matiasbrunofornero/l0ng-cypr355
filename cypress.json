@@ -1,0 +1,4 @@
+{
+    "baseUrl": "http://belonghome.com/",
+    "testFiles": "**/*.feature"
+}
