@@ -16,7 +16,8 @@
     "test:firefox": "cypress run --browser firefox",
     "test:chrome": "cypress run --browser chrome",
     "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
-    "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
+    "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html",
+    "dashboard": "./node_modules/.bin/cypress run --record --key 17d24084-ab8f-4d1a-bc49-960f8e4ec7c2"
   },
   "author": "",
   "license": "ISC",
