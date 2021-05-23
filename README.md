@@ -4,7 +4,7 @@
 * Project setup with Cypress version 7.3.0.
 * Makes use of Custom Commands instead Page Objects.
 * Behaviour-Driven Development with Cypress Cucumber Preprocessor.
-* Reports with Mochawesome 6.2.2.
+* CI with GitHub Pages config in the `.github/workflows` directory. 
 * Locators are in the `./fixtures` directory.
 * Modals locators are in the `./fixtures/modals` directory.
 * Tests are in the `./integration` directory, grouped into directory by functionality and with respective Cucumber feature.
@@ -16,6 +16,6 @@
 ## Run tests:
 * `npm run open` - Open Cypress UI to select tests to run.
 * `npm run headless` - Run tests in headless mode.
-* `npm run test` - Run tests in headless mode with mochawesome report generator.
-* `npm cy:run:firefox` - Run tests throught Mozilla Firefox.
-* `npm cy:run:chrome` - Run tests throught Google Chrome.
+* `npm run dashboard` - Run tests making use to the Cypress Dashboard.
+* `npm test:firefox` - Run tests throught Mozilla Firefox.
+* `npm test:chrome` - Run tests throught Google Chrome.

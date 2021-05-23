@@ -1,19 +1,9 @@
 {
   "baseUrl": "http://belonghome.com/",
   "testFiles": "**/*.feature",
-  "video": false,
-  "screenshotsFolder": "cypress/reports/mochareports/assets",
-  "screenshotOnRunFailure": false,
-  "reporter": "cypress-multi-reporters",
-  "reporterOptions": {
-    "reporterEnabled": "mochawesome",
-    "mochawesomeReporterOptions": {
-      "reportDir": "cypress/reports/mocha",
-      "quite": true,
-      "overwrite": false,
-      "html": false,
-      "json": true
-    }
-  },
+  "video": true,
+  "videosFolder": "cypress/videos",
+  "screenshotOnRunFailure": true,
+  "screenshotsFolder": "cypress/screenshots",
   "projectId": "34ttu3"
 }
