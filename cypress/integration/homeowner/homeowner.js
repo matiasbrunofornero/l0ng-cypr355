@@ -1,6 +1,7 @@
 import { address, name, lastname, phone, email } from '../../fixtures/data.json';
 
 Given(/^a user who navigates to belong homepage$/, () => {
+    //cy.viewport('iphone-x'); to automated mobile applications (need locators update)
     cy.visit('/');
 });
 
