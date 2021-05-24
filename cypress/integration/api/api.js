@@ -8,6 +8,7 @@ Given(/^a user who has a valid access token$/, () => {
     headers = {};
 });
 
+// #region Scenario - As an user I want to use GET method in Dummy Rest Sample API
 When(/^user calls the Employees endpoint by GET method$/, () => {
     cy.request('GET', apiUrl + '/employees').then((get) => {
         response = get;
@@ -21,7 +22,9 @@ Then(/^code response should be 200$/, () => {
 Then(/^body response should not be null$/, () => {
     expect(response.body).to.not.be.null;
 });
+// #endregion
 
+// #region Scenario - As an user I want to use POST method in Dummy Rest Sample API
 When(/^user creates a new employee with the name "(.*)" using POST method$/, (name) => {
     const item = { "name": name };
     cy.request('POST', apiUrl + '/create', item).then((post) => {
@@ -37,7 +40,9 @@ Then(/^body response status should be success$/, () => {
 Then(/^body response should includes the name "(.*)"$/, (name) => {
     expect(response.data.name).to.contain(name);
 });
+// #endregion
 
+// #region Scenario - As an user I want to use PUT method in Dummy Rest Sample API
 When(/^user updates a employee with ID "(.*)" name to "(.*)"$/, (ID, name) => {
     const item = { "name": name };
     cy.request(apiUrl + 'GET', '/employee/' + ID).then((get) => {
@@ -49,3 +54,4 @@ When(/^user updates a employee with ID "(.*)" name to "(.*)"$/, (ID, name) => {
         response = put.body;
     });
 });
+// #endregion
